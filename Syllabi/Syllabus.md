@@ -15,4 +15,3 @@ I expect not much detail will be there to start off with, and I will likely revi
   - [Download and install](https://code.visualstudio.com/)
   - General interface tour
   - [Useful extensions](VSCode/UsefulExtensions.md)
-
