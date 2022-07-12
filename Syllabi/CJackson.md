@@ -1,8 +1,10 @@
 # Purpose
 
-This file details the syllabus of my teaching. It will be broken up into sections, subdivided into other, more detailed sections.
+This is the syllabus for Cameron Jackson.
 
-I expect not much detail will be there to start off with, and I will likely revise and add to it a lot.
+# Student Background
+
+Previous dev experience basically none. Interested in learning C#.
 
 # Syllabus
 
@@ -10,7 +12,7 @@ I expect not much detail will be there to start off with, and I will likely revi
   - What is Git?
   - What is GitHub
   - [How to navigate GitHub](/Git/NavigatingGitHub.md)
-  - [Git Concepts](Git/GitConcepts.md)
+  - [Git Concepts](/Git/GitConcepts.md)
 - How to use VS Code
   - [Download and install](https://code.visualstudio.com/)
   - General interface tour
