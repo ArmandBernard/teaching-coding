@@ -6,7 +6,12 @@ I expect not much detail will be there to start off with, and I will likely revi
 
 # Syllabus
 
+- The basics of Git and GitHub
+  - What is Git?
+  - What is GitHub
+  - [Git Concepts](Git/GitConcepts.md)
 - How to use VS Code
   - [Download and install](https://code.visualstudio.com/)
   - General interface tour
   - [Useful extensions](VSCode/UsefulExtensions.md)
+
