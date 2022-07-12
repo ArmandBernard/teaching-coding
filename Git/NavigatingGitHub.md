@@ -1,4 +1,5 @@
 # Purpose
+
 This file shows how to navigate GitHub. It sounds dumb, but to a complete beginner this may be helpful.
 
 # Project Homepage
@@ -9,7 +10,9 @@ The project home page will allow you to reach most other places, and it's most l
 
 ## The README
 
-The README.md file stored inside the project will show up as visible on the home page. This usually contains information on the project and how to use it.
+The [README.md](/README.md) file stored inside the root of the project will render directly on the home page.
+
+This usually contains information on the project and how to use it.
 
 ## The Source (Project Files)
 
