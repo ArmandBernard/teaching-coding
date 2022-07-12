@@ -9,6 +9,7 @@ I expect not much detail will be there to start off with, and I will likely revi
 - The basics of Git and GitHub
   - What is Git?
   - What is GitHub
+  - [How to navigate GitHub](/Git/NavigatingGitHub.md)
   - [Git Concepts](Git/GitConcepts.md)
 - How to use VS Code
   - [Download and install](https://code.visualstudio.com/)
