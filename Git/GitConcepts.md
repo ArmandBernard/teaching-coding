@@ -62,3 +62,11 @@ To avoid doing everything in one commit or breaking main, you will usually creat
 Best practice to avoid conflicts is to only have one person working on each branch at a time. Conflicts will need to be resolved with the main branch eventually (usually just before merge), but it does not have to be done for every commit done to main.
 
 It is also bad practice to leave branches open for a significant portion of time, as it will increase the number of conflicts that need resolving.
+
+## Pull Requests
+
+Usually, instead of merging a branch directly from your PC, you create a pull request.
+
+A Pull Request is where you can see all the changes made in a branch, in one place and ask for someone else to review those changes before it is merged.
+
+See [Pull Requests](PullRequests.md)
