@@ -60,3 +60,16 @@ This means that memory held by variables that is not explicitly cleared will be 
 This can have the downside that memory leaks can happen in some scenarios if good coding practices are not followed.
 
 Other languages may require you to explicitly dispose of objects or clear memory or cause memory leaks (C) or prevent you from compiling at all if you have missing memory clearing calls (Rust).
+
+The scenarios in C# where you have to manually clear memory usually involve when you are using an external resource, such as storage and network.
+At a junior level, the guidance is that if an object has a `.Dispose()`, call it when you are done or use it with a `using` statement. This will cover you 95% of the time. I may write more on this at a later date.
+
+### LINQ
+
+LINQ, or Language Integrated Query (LINQ) is a language feature that is effectively a neater way of doing loops. I will discuss in more detail at a later date.
+
+### Mostly synchronous, with asynchronous capability
+
+C# is synchronous by default, which means that it will run linearly through the code without any parallel processing.
+
+However, there are several ways that code can be run across multiple threads and CPU Cores. You will likely need to use .NET classes for this though, so I'm not sure if this is technically a language feature.
