@@ -13,6 +13,7 @@ Previous dev experience basically none. Interested in learning C#.
   - What is GitHub
   - [How to navigate GitHub](/Git/NavigatingGitHub.md)
   - [Git Concepts](/Git/GitConcepts.md)
+  - [Pull Requests](../Git/PullRequests.md)
 - How to use VS Code
   - [Download and install](https://code.visualstudio.com/)
   - General interface tour
