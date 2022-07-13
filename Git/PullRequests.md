@@ -40,6 +40,8 @@ This will either be **Draft**, **Open**, **Closed** or **Merged**.
 
 It will also show any currently running automated tests, if you have any.
 
+It will also usually contain key actions, like closing or merging a PR.
+
 ## Comment
 
 This is where you can add a comment to the timeline.
