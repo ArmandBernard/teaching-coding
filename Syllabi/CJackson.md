@@ -19,8 +19,7 @@ Previous dev experience basically none. Interested in learning C#.
   - General interface tour
   - [Useful extensions](VSCode/UsefulExtensions.md)
 - Getting started with C#
-  - What is C#?
-  - What is .NET?
+  - [What is C# and .NET?](../CSharp/WhatIsCSharpAndDotNet.md)
   - Making a console app
   - Variables and data types
   - Printing to the console
