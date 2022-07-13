@@ -73,3 +73,14 @@ LINQ, or Language Integrated Query (LINQ) is a language feature that is effectiv
 C# is synchronous by default, which means that it will run linearly through the code without any parallel processing.
 
 However, there are several ways that code can be run across multiple threads and CPU Cores. You will likely need to use .NET classes for this though, so I'm not sure if this is technically a language feature.
+
+# .NET
+
+.NET is a name for a few different things, but they are similar. .NET is a set of Frameworks around C# that allow you to do most things without using externally sourced libraries.
+
+They extend language features and allow you to do things you'd usually need to hunt down libraries for in other languages.
+It is maintained by **Microsoft**. You may, in fact, never need to use anything outside of .NET.
+
+Things like: Building different types of applications (console, web, mobile, desktop); Storage Access; Network Access; Accessing specific Windows functionality or information; Game design (see Unity)...
+
+These are just a few.
