@@ -117,3 +117,30 @@ Note that from .NET 5.0, the "Core" branding has been somewhat dropped. Many peo
 ### .NET Standard
 
 Apparently a way to write applications for the .NET Framework, Mono and .NET Core at the same time. It's more of a spec than anything I wouldn't bother with this.
+
+## UI Frameworks
+
+### Console
+
+This is literally a console / terminal app. There's not much to say here. You can read and write to the console but not much else.
+
+### WinForms
+
+WinForms is one of the OG GUI Frameworks. It is very old, performs badly and looks ugly. That said, it is pretty darn simple to use. For that reason, it's not a bad starting point for many devs.
+
+### WPF (Windows Presentation Foundation)
+
+WPF is a little more modern, using code called XAML (similar to XML and HTML) to specify how components are arranged.
+
+While it is a solid choice for more feature-filled applications and performs fine, its binding system is very difficult to use imo.
+
+### Xamarin.Forms
+
+This is used for building Android, iOS and Windows apps. It seems to be built a bit like WPF.
+
+### MAUI (Multi-platform App UI)
+
+This is the new thing apparently. It's still in preview, but its ready to use apparently.
+It's a cross-platform GUI framework, designed to work not only with Desktop OS's like macOS and Windows, but iOS and Android. Doesn't seem like there's no _official_ linux support, sadly.
+
+It's an evolution of Xamarin.Forms.
