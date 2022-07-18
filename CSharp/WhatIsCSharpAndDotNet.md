@@ -76,6 +76,8 @@ However, there are several ways that code can be run across multiple threads and
 
 # .NET
 
+## What is .NET?
+
 .NET is a name for a few different things, but they are similar. .NET is a set of Frameworks around C# that allow you to do most things without using externally sourced libraries.
 
 They extend language features and allow you to do things you'd usually need to hunt down libraries for in other languages.
@@ -84,3 +86,34 @@ It is maintained by **Microsoft**. You may, in fact, never need to use anything 
 Things like: Building different types of applications (console, web, mobile, desktop); Storage Access; Network Access; Accessing specific Windows functionality or information; Game design (see Unity)...
 
 These are just a few.
+
+## .NET Versions
+
+.NET has a few variations.
+They globally all have the same things, but may be older or supported on different platforms.
+
+### .NET Framework
+
+The .NET Framework is Windows only. It's the OG, dating back to the late 90's. It is still supported, but most companies now use .NET Core for new projects.
+
+One advantage of the .NET Framework over the others is that it is always installed on Windows machines and Windows update keeps it up to date. This means that if you are working at a company where most PCs you are going to install your applications run Windows, its a little easier to deploy as you don't need to make sure the machines have a runtime installed.
+
+The downside is that the .NET Framework cannot normally run on other OS's like Mac OS or linux.
+
+There is a caveat in that [Mono](https://www.mono-project.com/) exists. It's third party reimplementation of the .NET Framework to be used on other platforms. This, in theory, allows .NET Framework applications to run on other platforms without further modification.
+
+It is however slow and buggy. It is **not** the recommended way of doing cross-platform any more. If you don't have a massive legacy codebase to migrate, it's much better to use .NET Core.
+
+### .NET (Core)
+
+The new, proper way to write .NET applications. It is cross platform and the best supported. Many new features are only being written for .NET Core.
+
+It is open source, unlike the Framework.
+
+For a bit, WinForms and WPF were not supported. Only ASP.NET. They are both supported now, but not cross-platform.
+
+Note that from .NET 5.0, the "Core" branding has been somewhat dropped. Many people still call it .NET Core though, to differentiate with the still somewhat supported .NET Framework.
+
+### .NET Standard
+
+Apparently a way to write applications for the .NET Framework, Mono and .NET Core at the same time. It's more of a spec than anything I wouldn't bother with this.
