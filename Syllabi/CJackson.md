@@ -20,7 +20,7 @@ Previous dev experience basically none. Interested in learning C#.
   - [Useful extensions](VSCode/UsefulExtensions.md)
 - Getting started with C#
   - [What is C# and .NET?](../CSharp/WhatIsCSharpAndDotNet.md)
-  - Making a console app
+  - [Making a console app](../CSharp/ConsoleApp.md)
   - Variables and data types
   - Printing to the console
   - Working with strings
