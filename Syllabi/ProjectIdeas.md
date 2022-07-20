@@ -48,4 +48,5 @@ A basic UI could also be built.
 - Console App
 - HttpClient or similar
 - Selenium or similar
-- Perhaps a UI to display data
+- Perhaps a UI to display data?
+- Email notifications?
