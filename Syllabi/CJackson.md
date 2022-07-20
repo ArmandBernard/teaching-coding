@@ -43,6 +43,7 @@ Previous dev experience basically none. Interested in learning C#.
   - **Challenge**: Even numbers
   - Inheritance (scary)
   - Interfaces
+  - **Challenge**: Logger interface
   - LINQ
   - **Challenge**: Even numbers with LINQ
 - My first GUI: WinForms
@@ -52,3 +53,12 @@ Previous dev experience basically none. Interested in learning C#.
   - **Challenge**: Make the button say the users age
   - _OPTIONAL_ Behind the scenes of controls: ControlCollection
   - _OPTIONAL_ **Challenge**: Programmatically create a UI.
+- A basic Web API app using ASP.NET Core
+  - Making a Controller
+  - Using Postman (or similar)
+    - HTTP Requests and their types
+    - Response codes
+  - Services through Dependency Injection
+    - A config reader
+    - A data writer
+- React
