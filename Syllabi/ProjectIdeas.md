@@ -50,3 +50,11 @@ A basic UI could also be built.
 - Selenium or similar
 - Perhaps a UI to display data?
 - Email notifications?
+
+## File browser
+
+Replace your file browser!
+
+- WinForms or WPF
+- File access
+- Cross-window drag and drop
