@@ -28,6 +28,7 @@ Previous dev experience basically none. Interested in learning C#.
     - Interpolation
     - Replace
   - Reading from the Console.
+  - Error Handling
   - Comments
   - **Challenge**: Tell users their age (classic)
   - Arithmetic
