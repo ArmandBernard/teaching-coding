@@ -41,10 +41,10 @@ Previous dev experience basically none. Interested in learning C#.
     - Constructors
     - Properties vs Fields
   - Static vs dynamic
-  - **Challenge**: Even numbers
   - Inheritance (scary)
   - Interfaces
   - **Challenge**: Logger interface
+  - **Challenge**: Even numbers
   - LINQ
   - **Challenge**: Even numbers with LINQ
 - My first GUI: WinForms
