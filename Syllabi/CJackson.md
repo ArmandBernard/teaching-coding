@@ -41,6 +41,7 @@ Previous dev experience basically none. Interested in learning C#.
     - Constructors
     - Properties vs Fields
   - Static vs dynamic
+  - **Challenge**: [Circle](../CSharp/CircleQuestion.md)
   - Inheritance (scary)
   - Interfaces
   - **Challenge**: Logger interface
