@@ -79,3 +79,26 @@ Uploading this folder is a waste of space, so don't `git commit` it.
 ## `bin` folder
 
 This is where the compiled application will live. This folder likely won't exist if you haven't run the program yet.
+
+# How it works
+
+## Building
+
+The process of building or compiling an application is needed before running a .NET application. Unless of course there are no changes from last time you built it.
+
+Building can be done by calling `dotnet build`. However, this will be done automatically when you run the application with `dotnet run` anyway.
+
+When the build happens starts, all project files are compiled into an `.exe` **binary** and dumped into the `bin` (short for binary) folder. Then the binary is run and the output
+of lines like `Console.WriteLine()` are written to the terminal.
+
+## How to run
+
+You can run your application with the `dotnet run` command. Because it is a console application, your only UI will be terminal output.
+
+Which terminal? Well, if you run the binary from the terminal, the output will show in the terminal you used to start the application.
+
+![dotnet run](images/DotnetRun.png)
+
+If you run the binary by double clicking it or similar, a new terminal will open.
+
+If you run the program via VSCode tasks, it may open it in an integrated Terminal tab. It depends how VSCode is configured.
