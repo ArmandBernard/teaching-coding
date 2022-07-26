@@ -8,7 +8,7 @@ A set of exercises designed to test your understanding of interfaces.
 
 Build an interface called `IShape` that has a `Perimeter` and `Area` methods. Both should be parameterless and return a `double`.
 
-Then, apply that interface to your [Circle](CircleAnswer.cs) class.
+Then, apply that interface to your [Circle](../Circle/CircleQuestion.md) class.
 
 ## Exercise 2
 

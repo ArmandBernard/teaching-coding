@@ -36,18 +36,18 @@ Previous dev experience basically none. Interested in learning C#.
   - Arrays and Lists
   - Loops
   - Methods (aka functions)
-  - **Challenge**: [build exponent method](../CSharp/ExponentQuestion.md)
+  - **Challenge**: [build exponent method](../CSharp/Exponent/ExponentQuestion.md)
   - Classes
     - Constructors
     - Properties vs Fields
     - Static vs dynamic
     - Extensions
-  - **Challenge**: [Circle](../CSharp/CircleQuestion.md)
+  - **Challenge**: [Circle](../CSharp/Circle/CircleQuestion.md)
   - Inheritance (scary)
     - Override vs new
     - base
   - Interfaces
-  - **Challenge**: [Shapes with interfaces](../CSharp/ShapesQuestion.md)
+  - **Challenge**: [Shapes with interfaces](../CSharp/Shapes/ShapesQuestion.md)
   - **Challenge**: Even numbers
   - LINQ
   - **Challenge**: Even numbers with LINQ
