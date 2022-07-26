@@ -48,8 +48,12 @@ Previous dev experience basically none. Interested in learning C#.
     - base
   - Interfaces
   - **Challenge**: [Shapes with interfaces](../CSharp/Shapes/ShapesQuestion.md)
+  - Lambda Expressions
+    - ForEach extension
   - **Challenge**: [Even numbers](../CSharp/EvenNumbers/EvenNumbersQuestion.md) (Exercise 1)
   - LINQ
+    - Select, Where
+    - IEnumerable
   - **Challenge**: [Even numbers](../CSharp/EvenNumbers/EvenNumbersQuestion.md) (Exercise 2 & 3)
 - My first GUI: WinForms
   - Using the designer
