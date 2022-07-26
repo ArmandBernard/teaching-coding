@@ -44,7 +44,7 @@ Previous dev experience basically none. Interested in learning C#.
   - **Challenge**: [Circle](../CSharp/CircleQuestion.md)
   - Inheritance (scary)
   - Interfaces
-  - **Challenge**: Logger interface
+  - **Challenge**: Shapes with interfaces
   - **Challenge**: Even numbers
   - LINQ
   - **Challenge**: Even numbers with LINQ
@@ -62,5 +62,5 @@ Previous dev experience basically none. Interested in learning C#.
     - Response codes
   - Services through Dependency Injection
     - A config reader
-    - A data writer
+    - **Challenge**: Logger interface with DI
 - React
