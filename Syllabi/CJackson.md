@@ -43,7 +43,7 @@ Previous dev experience basically none. Interested in learning C#.
     - Static vs dynamic
     - Extensions
   - **Challenge**: [Circle](../CSharp/Circle/CircleQuestion.md)
-  - Inheritance (scary)
+  - [Inheritance (scary)](../CSharp/InheritanceExample.cs)
     - Override vs new
     - base
   - Interfaces
