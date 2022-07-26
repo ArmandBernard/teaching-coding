@@ -48,9 +48,9 @@ Previous dev experience basically none. Interested in learning C#.
     - base
   - Interfaces
   - **Challenge**: [Shapes with interfaces](../CSharp/Shapes/ShapesQuestion.md)
-  - **Challenge**: Even numbers
+  - **Challenge**: [Even numbers](../CSharp/EvenNumbers/EvenNumbersQuestion.md) (Exercise 1)
   - LINQ
-  - **Challenge**: Even numbers with LINQ
+  - **Challenge**: [Even numbers](../CSharp/EvenNumbers/EvenNumbersQuestion.md) (Exercise 2 & 3)
 - My first GUI: WinForms
   - Using the designer
   - Positioning Controls inside others
