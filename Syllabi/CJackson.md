@@ -44,7 +44,7 @@ Previous dev experience basically none. Interested in learning C#.
   - **Challenge**: [Circle](../CSharp/CircleQuestion.md)
   - Inheritance (scary)
   - Interfaces
-  - **Challenge**: Shapes with interfaces
+  - **Challenge**: [Shapes with interfaces](../CSharp/ShapesQuestion.md)
   - **Challenge**: Even numbers
   - LINQ
   - **Challenge**: Even numbers with LINQ
