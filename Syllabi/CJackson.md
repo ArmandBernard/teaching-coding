@@ -4,14 +4,13 @@ This is the syllabus for Cameron Jackson.
 
 # Student Background
 
-Previous dev experience basically none. Interested in learning C#.
+Previous dev experience is some Matlab and Python. Knows types, loops and functions. Interested in learning C#.
 
 # Syllabus
 
 - The basics of Git and GitHub
-  - What is Git?
-  - What is GitHub
   - [How to navigate GitHub](/Git/NavigatingGitHub.md)
+  - What is Git and GitHub?
   - [Git Concepts](/Git/GitConcepts.md)
   - [Pull Requests](../Git/PullRequests.md)
 - How to use VS Code
