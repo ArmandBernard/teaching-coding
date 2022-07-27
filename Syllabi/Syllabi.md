@@ -7,3 +7,5 @@ Project ideas can be found [here](ProjectIdeas.md), this will affect the syllabi
 # Syllabi
 
 [Cameron Jackson](CJackson.md)
+
+[Millie Wilson](MWilson.md)
