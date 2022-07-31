@@ -119,6 +119,24 @@ If you want to install an alpha, beta or older version of a package, you can do 
 
 `npm install <package-name>@<version>`
 
+#### Development only install
+
+Sometimes, you'll want to install things only for development to reduce the build time or to not ship modules you only need for development to the end-user.
+
+A dev-only install looks like this:
+
+`npm install --save-dev <package-name>@<version>`
+
+or
+
+`npm install -D <package-name>@<version>`
+
+Here are some great examples of things that should (probably) be dev installed:
+
+- ESlint
+- TypeScript
+- @types packages
+
 ### Upgrade
 
 To upgrade a package, simply run an install command again.
