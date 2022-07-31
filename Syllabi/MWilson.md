@@ -21,7 +21,9 @@ Previous dev experience basically none. Seems to be interested in web stuff.
   - What is CSS?
   - What is JavaScript
   - What is Node?
-- [Setting up a basic website](../Node/GettingStarted.md)
+- Setting up a basic website
+  - [Getting Started](../Node/GettingStarted.md)
+  - [Making the website refresh on live changes](../Node/WatchingForChanges.md)
 - HTML basics
   - Using the inspector
   - Tags
