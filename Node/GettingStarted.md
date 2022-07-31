@@ -2,7 +2,7 @@
 
 Get you up and running with Node.js! Running through the below steps will create a new Node.js application which can load a html file.
 
-# Steps to creating a basic web app
+# Creating and serving a basic website
 
 ## Node Setup
 
@@ -23,7 +23,9 @@ The following steps will add a lot of files to the project we don't want to add 
 package-lock.json
 ```
 
-## Basic Homepage
+## Create a basic homepage
+
+### Add express
 
 To host a basic homepage, start by installing [express](https://expressjs.com/) and its types:
 
@@ -31,7 +33,11 @@ To host a basic homepage, start by installing [express](https://expressjs.com/) 
 
 `npm install --save-dev @types/express`
 
-Then create a basic HTML file in your root directory called `index.html`:
+### HTML
+
+Create a new folder called `public` in the root directory.
+
+Then create a basic HTML file in `public` called `index.html`:
 
 ```html
 <!DOCTYPE html>
@@ -46,7 +52,29 @@ Then create a basic HTML file in your root directory called `index.html`:
 </html>
 ```
 
-Also make a start point for your program called `index.js`:
+### CSS
+
+Styles are essential to making a good looking website!
+
+Create a new file called `index.css` inside `./public/css`, then add the following contents to make the text red!
+
+```css
+body {
+  color: red;
+}
+```
+
+Add the following line inside the html file's `<head>` tag to include the css file:
+
+```html
+<link rel="stylesheet" href="css/index.css" />
+```
+
+## Serve up the page
+
+To server the file to the user, we need to make a web server and endpoint.
+
+To do this, create a new file called `index.js` in the root directory and add the following contents:
 
 ```js
 import express from "express";
@@ -58,11 +86,8 @@ const app = express();
 
 // create a page endpoint for the index.html file
 app.get("/", async (_, res) => {
-  // read html file
-  const html = await fsp.readFile("index.html", "utf8");
-
-  // send html to the user
-  res.send(html);
+  // send the index.html file to the client
+  res.sendFile(path.join(__dirname, "public", "index.html"));
 });
 
 // get express to listen on the port, and tell the user what port we're using
@@ -95,6 +120,8 @@ Create a new folder called `.vscode` then add a file called `launch.json` with t
 }
 ```
 
+## Run the application!
+
 At this point, your project folder should now look something like this:
 
 ![Folder Contents](images/GettingStartedFolderContents.png)
@@ -115,4 +142,12 @@ Once it's running, you will see this in the console:
 
 Ctrl + click on the link to go to the webpage your site is being hosted on, and you should see the words "Hello World!".
 
+![Basic website running in the browser](images/BasicWebsiteInBrowser.png)
+
 Congrats! You just created a basic website!
+
+When you want to stop the program, either press the stop in the control bar (if run through VS Code)...
+
+![Program Control Bar](images/VSCodeControlBar.png)
+
+...or press Ctrl+C to in the terminal (if you ran it from there).
