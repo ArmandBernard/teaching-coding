@@ -16,12 +16,13 @@ Previous dev experience basically none. Seems to be interested in web stuff.
   - [Download and install](https://code.visualstudio.com/)
   - General interface tour
   - [Useful extensions](VSCode/UsefulExtensions.md)
-- Node.js basics
-  - [Setting up Node.js](../Node/GettingStarted.md)
-  - [Modules and Packages](../Node/ModulesAndPackages.md)
-  - [Working with files](../Node/WorkingWithFiles.md)
-- HTML basics
+- The basics of the Web
   - What is HTML?
+  - What is CSS?
+  - What is JavaScript
+  - What is Node?
+- [Setting up a basic website](../Node/GettingStarted.md)
+- HTML basics
   - Using the inspector
   - Tags
   - Properties
@@ -29,7 +30,7 @@ Previous dev experience basically none. Seems to be interested in web stuff.
   - Adding scripts
     - Document selectors
 - Styling with CSS
-  - What is CSS?
+  - Inline vs style tag vs file
   - Colours
   - Spacing
   - Display
@@ -37,8 +38,10 @@ Previous dev experience basically none. Seems to be interested in web stuff.
     - Inline-block
     - Flex
   - Font
+- Node.js basics
+  - [Modules and Packages](../Node/ModulesAndPackages.md)
+  - [Working with files](../Node/WorkingWithFiles.md)
 - Getting started with JavaScript
-  - What is JavaScript?
   - Running code in the browser
   - Variables and data types
     - numbers
