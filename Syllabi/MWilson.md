@@ -16,6 +16,10 @@ Previous dev experience basically none. Seems to be interested in web stuff.
   - [Download and install](https://code.visualstudio.com/)
   - General interface tour
   - [Useful extensions](VSCode/UsefulExtensions.md)
+- Node.js basics
+  - [Setting up Node.js](../Node/GettingStarted.md)
+  - [Modules and Packages](../Node/ModulesAndPackages.md)
+  - [Working with files](../Node/WorkingWithFiles.md)
 - HTML basics
   - What is HTML?
   - Using the inspector
