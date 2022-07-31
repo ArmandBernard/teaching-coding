@@ -15,10 +15,22 @@ Importing and exporting can be done in one of two syntaxes.
 ## Import
 
 CommonJS:
-`const { myFunction } = require("myFile");`
 
-ESmodules:
-`import { myFunction } from "myFile";`
+```js
+const { myFunction } = require("myFile");
+```
+
+NOTE: For TypeScript files, use
+
+```ts
+import { myFunction } = require("myFile");
+```
+
+ESModules:
+
+```js
+import { myFunction } from "myFile";
+```
 
 ## Export
 
