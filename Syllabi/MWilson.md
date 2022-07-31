@@ -15,16 +15,16 @@ Previous dev experience basically none. Seems to be interested in web stuff.
 - How to use VS Code
   - [Download and install](https://code.visualstudio.com/)
   - General interface tour
-  - [Useful extensions](VSCode/UsefulExtensions.md)
+  - [Useful extensions](../VSCode/UsefulExtensions.md)
 - The basics of the Web
   - What is HTML?
   - What is CSS?
   - What is JavaScript
   - What is Node?
-- Setting up a basic website
-  - [Getting started](../Node/GettingStarted.md)
-  - [Making the website refresh on live changes](../Node/WatchingForChanges.md)
-  - [Setting up TypeScript for Node](../Node/TypeScriptForNode.md)
+- (Copy example project from [here](../Node/Code/BasicWebsiteTS/) to skip [node setup](#setting-up-node))
+- Node.js basics
+  - [Modules and Packages](../Node/ModulesAndPackages.md)
+  - [Working with files](../Node/WorkingWithFiles.md)
 - HTML basics
   - Using the inspector
   - Tags
@@ -41,9 +41,6 @@ Previous dev experience basically none. Seems to be interested in web stuff.
     - Inline-block
     - Flex
   - Font
-- Node.js basics
-  - [Modules and Packages](../Node/ModulesAndPackages.md)
-  - [Working with files](../Node/WorkingWithFiles.md)
 - Getting started with JavaScript
   - Running code in the browser
   - Variables and data types
@@ -61,3 +58,13 @@ Previous dev experience basically none. Seems to be interested in web stuff.
   - Loops
   - Methods (aka functions)
   - map, filter, reduce
+
+# Setting up Node
+
+Here's some more nitty-gritty details I wrote up in setting up the Basic Website template. No need to go through this technical detail in the course, but good to have it down!
+
+- Setting up Node to serve a static website
+  - [Getting started](../Node/GettingStarted.md)
+  - [Making the website refresh on code changes](../Node/WatchingForChanges.md)
+  - [Adding ESLint](../Node/SettingUpESLint.md)
+  - [Setting up TypeScript for Node](../Node/TypeScriptForNode.md)
