@@ -22,8 +22,9 @@ Previous dev experience basically none. Seems to be interested in web stuff.
   - What is JavaScript
   - What is Node?
 - Setting up a basic website
-  - [Getting Started](../Node/GettingStarted.md)
+  - [Getting started](../Node/GettingStarted.md)
   - [Making the website refresh on live changes](../Node/WatchingForChanges.md)
+  - [Setting up TypeScript for Node](../Node/TypeScriptForNode.md)
 - HTML basics
   - Using the inspector
   - Tags
