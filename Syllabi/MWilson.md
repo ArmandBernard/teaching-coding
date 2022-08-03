@@ -30,7 +30,9 @@ Previous dev experience basically none. Seems to be interested in web stuff.
   - Tags
   - Properties
   - Events
-  - Adding scripts
+  - Scripts
+    - [What are scripts?](../HtmlCssJs/WhatAreScripts.md)
+    - Adding scripts
     - Document selectors
 - Styling with CSS
   - Inline vs style tag vs file
