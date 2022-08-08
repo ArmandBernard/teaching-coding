@@ -58,9 +58,9 @@ Previous dev experience is some Matlab and Python. Knows types, loops and functi
   - Using the designer
   - Positioning Controls inside others
   - Events
-  - **Challenge**: Make the button say the users age
-  - _OPTIONAL_ Behind the scenes of controls: ControlCollection
-  - _OPTIONAL_ **Challenge**: Programmatically create a UI.
+  - **Challenge**: Make the button list the contents of a text box
+  - _OPTIONAL_ Programmatically changing controls
+  - _OPTIONAL_ **Challenge**: Programmatically add controls to a TableLayoutPanel.
 - A basic Web API app using ASP.NET Core
   - Making a Controller
   - Using Postman (or similar)
