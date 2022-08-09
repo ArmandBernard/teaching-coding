@@ -86,7 +86,7 @@ Previous dev experience is some Matlab and Python. Knows types, loops and functi
   - Events
   - Scripts
     - [What are scripts?](../HtmlCssJs/WhatAreScripts.md)
-    - Adding scripts
+    - [Adding scripts](../HtmlCssJs/AddingScripts.md)
     - Document selectors
 - Styling with CSS
   - Inline vs style tag vs file

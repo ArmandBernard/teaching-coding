@@ -32,7 +32,7 @@ Previous dev experience basically none. Seems to be interested in web stuff.
   - Events
   - Scripts
     - [What are scripts?](../HtmlCssJs/WhatAreScripts.md)
-    - Adding scripts
+    - [Adding scripts](../HtmlCssJs/AddingScripts.md)
     - Document selectors
 - Styling with CSS
   - Inline vs style tag vs file
