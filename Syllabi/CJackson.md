@@ -72,6 +72,18 @@ Previous dev experience is some Matlab and Python. Knows types, loops and functi
   - _OPTIONAL_ Programmatically changing controls
   - _OPTIONAL_ **Challenge**: Programmatically add controls to a TableLayoutPanel.
 
+## Web APIs
+
+- A basic Web API app using ASP.NET Core
+  - [Getting started with the template](../CSharp/WebAPI/GettingStarted.md)
+  - [Controllers](../CSharp/WebAPI/Controllers.md)
+  - [Using Swagger](../CSharp/WebAPI/GettingStarted.md#swagger)
+    - HTTP Requests and their types
+    - Response codes
+  - Services through Dependency Injection
+    - A config reader
+    - **Challenge**: Logger interface with DI
+
 ## Web Basics
 
 - The basics of the Web
@@ -98,17 +110,6 @@ Previous dev experience is some Matlab and Python. Knows types, loops and functi
     - Flex
   - Font
 - Javascript vs TypeScript
-
-## Web APIs
-
-- A basic Web API app using ASP.NET Core
-  - Making a Controller
-  - Using Postman (or similar)
-    - HTTP Requests and their types
-    - Response codes
-  - Services through Dependency Injection
-    - A config reader
-    - **Challenge**: Logger interface with DI
 
 ## Web Apps
 
