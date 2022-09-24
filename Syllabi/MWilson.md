@@ -19,7 +19,7 @@ Previous dev experience basically none. Seems to be interested in web stuff.
 - The basics of the Web
   - What is HTML?
   - What is CSS?
-  - What is JavaScript
+  - [What is JavaScript?](../HtmlCssJs/WhatAreScripts.md)
   - What is Node?
 - (Copy example project from [here](../Node/Code/BasicWebsiteTS/) to skip [node setup](#setting-up-node))
 - Node.js basics
@@ -32,8 +32,6 @@ Previous dev experience basically none. Seems to be interested in web stuff.
   - Events
   - Scripts
     - [What are scripts?](../HtmlCssJs/WhatAreScripts.md)
-    - [Adding scripts](../HtmlCssJs/AddingScripts.md)
-    - Document selectors
 - Styling with CSS
   - Inline vs style tag vs file
   - Colours
@@ -44,12 +42,14 @@ Previous dev experience basically none. Seems to be interested in web stuff.
     - Flex
   - Font
 - Getting started with JavaScript
-  - Running code in the browser
+  - [Running code in the browser](../HtmlCssJs/AddingScripts.md)
   - Variables and data types
     - numbers
     - strings
     - objects
+  - Methods (aka functions)
   - Comments
+  - [Modifying a webpage with JavaScript](../HtmlCssJs/ChangingPagesWithScripts.md)
   - Printing to the console
   - Working with strings
     - Concatenation
@@ -58,7 +58,6 @@ Previous dev experience basically none. Seems to be interested in web stuff.
   - If statements
   - Arrays
   - Loops
-  - Methods (aka functions)
   - map, filter, reduce
 
 # Setting up Node
