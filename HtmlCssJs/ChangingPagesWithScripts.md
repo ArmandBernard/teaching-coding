@@ -14,6 +14,7 @@ To explain how a webpage can be changed with scripts.
   - [Advanced selectors](#advanced-selectors)
     - [Selector examples](#selector-examples)
 - [Navigating the DOM](#navigating-the-dom)
+  - [Selectors on elements](#selectors-on-elements)
 - [Element attributes](#element-attributes)
   - [Getting attributes](#getting-attributes)
   - [Setting attributes](#setting-attributes)
@@ -117,6 +118,16 @@ The parent will be the element in the DOM that contains the selected one. It can
 if there are any children, they can be gotten with `element.children`.
 
 The next element after ours can be gotten with `element.nextSibling`.
+
+## Selectors on elements
+
+Selectors like `querySelector` or `getElementById` can also be used on elements to search their children exclusively, as opposed to the rest of the page.
+
+E.g. for all child buttons with the `button-primary` class
+
+```js
+element.querySelectorAll("button.button-primary");
+```
 
 # Element attributes
 
