@@ -66,7 +66,7 @@ In the html:
   <body>
     ...
     <div id="text-to-change">This is the current text</div>
-    <button onclick="changeText()">Change text</button>
+    <button onclick="changeText('text-to-change')">Change text</button>
     <script type="text/javascript" src="js/index.js"></script>
     ...
   </body>
@@ -76,9 +76,8 @@ In the html:
 in `index.js`:
 
 ```js
-function changeText() {
-  document.getElementById("text-to-change").textContent =
-    "This is the new text!";
+function changeText(id) {
+  document.getElementById(id).textContent = "This is the new text!";
 }
 ```
 
