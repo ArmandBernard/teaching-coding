@@ -2,6 +2,17 @@
 
 This file shows what Pull Requests (often abbreviated to PRs) look like. Make sure you've read up about [GitHub](NavigatingGitHub.md) and [Git Concepts](GitConcepts.md) first.
 
+# Contents
+
+- [Purpose](#purpose)
+- [Contents](#contents)
+- [Navigating to PRs](#navigating-to-prs)
+- [PR Interface](#pr-interface)
+  - [PR Description](#pr-description)
+  - [Timeline](#timeline)
+  - [PR Status](#pr-status)
+  - [Comment](#comment)
+
 # Navigating to PRs
 
 ![Pull Request](images/PullRequestList.png)

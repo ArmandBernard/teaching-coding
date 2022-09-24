@@ -2,6 +2,21 @@
 
 Get you up and running with Node.js! Running through the below steps will create a new Node.js application which can load a html file.
 
+# Contents
+
+- [Purpose](#purpose)
+- [Contents](#contents)
+- [Creating and serving a basic website](#creating-and-serving-a-basic-website)
+  - [Node Setup](#node-setup)
+  - [Add a .gitignore](#add-a-gitignore)
+  - [Create a basic homepage](#create-a-basic-homepage)
+    - [Add express](#add-express)
+    - [HTML](#html)
+    - [CSS](#css)
+  - [Serve up the page](#serve-up-the-page)
+  - [Add a VS Code run task](#add-a-vs-code-run-task)
+  - [Run the application!](#run-the-application)
+
 # Creating and serving a basic website
 
 ## Node Setup

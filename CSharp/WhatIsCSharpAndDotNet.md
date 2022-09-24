@@ -2,6 +2,31 @@
 
 To Explain what C# and .NET is.
 
+# Contents
+
+- [Purpose](#purpose)
+- [Contents](#contents)
+- [C#](#c)
+  - [What is it?](#what-is-it)
+  - [Properties of C#](#properties-of-c)
+    - [Strongly Typed](#strongly-typed)
+    - [Object Oriented](#object-oriented)
+    - [Garbage Collection](#garbage-collection)
+    - [LINQ](#linq)
+    - [Mostly synchronous, with asynchronous capability](#mostly-synchronous-with-asynchronous-capability)
+- [.NET](#net)
+  - [What is .NET?](#what-is-net)
+  - [.NET Versions](#net-versions)
+    - [.NET Framework](#net-framework)
+    - [.NET (Core)](#net-core)
+    - [.NET Standard](#net-standard)
+  - [UI Frameworks](#ui-frameworks)
+    - [Console](#console)
+    - [WinForms](#winforms)
+    - [WPF (Windows Presentation Foundation)](#wpf-windows-presentation-foundation)
+    - [Xamarin.Forms](#xamarinforms)
+    - [MAUI (Multi-platform App UI)](#maui-multi-platform-app-ui)
+
 # C#
 
 ## What is it?

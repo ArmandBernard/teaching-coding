@@ -2,6 +2,15 @@
 
 To explain how scripts can be added to web pages
 
+# Contents
+
+- [Purpose](#purpose)
+- [Contents](#contents)
+- [Methods of adding scripts](#methods-of-adding-scripts)
+  - [Inline](#inline)
+  - [In a `<script>` tag](#in-a-script-tag)
+  - [From a separate file](#from-a-separate-file)
+
 # Methods of adding scripts
 
 Scripts can be added in several ways.

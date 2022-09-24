@@ -2,6 +2,20 @@
 
 This file is to explain how to create a .NET Core console application.
 
+# Contents
+
+- [Purpose](#purpose)
+- [Contents](#contents)
+- [Creation](#creation)
+- [Structure](#structure)
+  - [The `.csproj` Project file](#the-csproj-project-file)
+  - [The `Program.cs` file](#the-programcs-file)
+  - [`obj` folder](#obj-folder)
+  - [`bin` folder](#bin-folder)
+- [How it works](#how-it-works)
+  - [Building](#building)
+  - [How to run](#how-to-run)
+
 # Creation
 
 Run the following in a terminal to create a console app in the current folder:

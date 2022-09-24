@@ -2,6 +2,18 @@
 
 This file outlines common git concepts, and how it is used in a day to day basis.
 
+# Contents
+
+- [Purpose](#purpose)
+- [Contents](#contents)
+- [Commands](#commands)
+  - [Committing](#committing)
+  - [Pushing and pulling](#pushing-and-pulling)
+    - [Pushing](#pushing)
+    - [Pulling](#pulling)
+  - [Branches](#branches)
+  - [Pull Requests](#pull-requests)
+
 # Commands
 
 ## Committing

@@ -2,6 +2,17 @@
 
 This file shows how to navigate GitHub. It sounds dumb, but to a complete beginner this may be helpful.
 
+# Contents
+
+- [Purpose](#purpose)
+- [Contents](#contents)
+- [Project Homepage](#project-homepage)
+  - [The README](#the-readme)
+  - [The Source (Project Files)](#the-source-project-files)
+  - [Downloading the Source](#downloading-the-source)
+  - [Releases](#releases)
+- [File Preview](#file-preview)
+
 # Project Homepage
 
 ![Project Homepage](images/ProjectHomePageAnnotated.png)

@@ -2,6 +2,18 @@
 
 To outline some stuff about .NET templates.
 
+# Contents
+
+- [Purpose](#purpose)
+- [Contents](#contents)
+- [Available templates](#available-templates)
+- [Arguments](#arguments)
+  - [Dry Run](#dry-run)
+  - [Framework](#framework)
+  - [Template specific options](#template-specific-options)
+  - [Output directory](#output-directory)
+  - [Name](#name)
+
 # Available templates
 
 The templates that are available can be seen [here](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-new#arguments) or extracted from the command line using

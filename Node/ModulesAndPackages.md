@@ -2,6 +2,27 @@
 
 To explain how modules and packages work in Node.js.
 
+# Contents
+
+- [Purpose](#purpose)
+- [Contents](#contents)
+- [What are modules?](#what-are-modules)
+- [Import/Export Syntax](#importexport-syntax)
+  - [Import](#import)
+  - [Export](#export)
+  - [Syntax info](#syntax-info)
+- [NPM and External Packages](#npm-and-external-packages)
+  - [Initializing](#initializing)
+  - [Installing, upgrading and removing packages](#installing-upgrading-and-removing-packages)
+    - [Install](#install)
+      - [Global install](#global-install)
+      - [Specific version install](#specific-version-install)
+      - [Development only install](#development-only-install)
+    - [Upgrade](#upgrade)
+    - [Remove](#remove)
+  - [After installing](#after-installing)
+  - [Restoring](#restoring)
+
 # What are modules?
 
 Modules are bits of code that can be exported and imported.
