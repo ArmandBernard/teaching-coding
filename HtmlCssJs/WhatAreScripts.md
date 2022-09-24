@@ -6,6 +6,8 @@ To explain what scripts are and what they're used for.
 
 Scripts allow you to change things dynamically in a webpage and transmit information to a server. Basically every website uses them.
 
+Scripts on the web are written in a programming language called **JavaScript**.
+
 # The web without scripts
 
 While a lot can be done with static webpages, there are inherent limitations.
