@@ -13,6 +13,10 @@ To explain how a webpage can be changed with scripts.
   - [By id](#by-id)
   - [Advanced selectors](#advanced-selectors)
     - [Selector examples](#selector-examples)
+- [Navigating the DOM](#navigating-the-dom)
+- [Element attributes](#element-attributes)
+  - [Getting attributes](#getting-attributes)
+  - [Setting attributes](#setting-attributes)
 
 # Foreword
 
@@ -88,4 +92,66 @@ The first input element with a `class` of `password-field` inside another elemen
 
 ```js
 const element = document.querySelector(".login-form input.password-field");
+```
+
+# Navigating the DOM
+
+You can also get its parent and children, allowing you to navigate the DOM.
+
+As the DOM is a tree structure, there is only ever one parent to a given element, if any, but there it can have several children.
+
+```html
+<body>
+  <div name="parent">
+    <div name="me">
+      <div name="child 1"></div>
+      <div name="child 2"></div>
+    </div>
+    <div name="sibling"></div>
+  </div>
+</body>
+```
+
+The parent will be the element in the DOM that contains the selected one. It can be accessed with `element.parentElement`.
+
+if there are any children, they can be gotten with `element.children`.
+
+The next element after ours can be gotten with `element.nextSibling`.
+
+# Element attributes
+
+Once an element has been found, you can access its attributes.
+
+## Getting attributes
+
+For example, you can get its `id` with `element.id`, see if its hidden with `element.hidden` etc.
+
+Less common or custom attributes (such as `data-bind`) can be gotten with
+
+```js
+element.getAttribute("data-bind");
+```
+
+For style related attributes, such as colour, use the style property.
+
+e.g.
+
+```js
+const elementColor = element.style.color;
+```
+
+## Setting attributes
+
+You can also set the same attributes you get.
+
+Most can be set using the `=` setting syntax e.g.
+
+```js
+element.hidden = true;
+```
+
+but for more custom named attributes you can use
+
+```js
+element.setAttribute("data-bind");
 ```
