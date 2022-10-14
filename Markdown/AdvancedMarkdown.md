@@ -24,14 +24,20 @@ Naturally, scripts in your HTML will most likely not be run, as this is a securi
 ```html
 <div style="display: flex; justify-content: space-between">
     <span style="color: firebrick">Red left</span>
-    <span style="color: dodgerblue ">Blue right</span>
+    <span style="color: dodgerblue">Blue right</span>
 </div>
 ```
 
 <div style="display: flex; justify-content: space-between">
     <span style="color: firebrick">Red left</span>
-    <span style="color: dodgerblue ">Blue right</span>
+    <span style="color: dodgerblue">Blue right</span>
 </div>
+
+Depending on where you are viewing this, you may see the below intended look or something not quite the same.
+
+![Expected HTML result](images/HtmlExpected.png)
+
+GitHub for example is very restrictive on what it will show for security reasons. It will remove many properties including inline styles.
 
 # Tables
 
