@@ -21,7 +21,15 @@ To specifically see what GitHub supports, see [this spec](https://github.github.
 
 Markdown will allow you to write static HTML in your Markdown. Most of the time, there is no need to do this, however, you may want to do this to do some extra formatting markdown does not natively support.
 
-Naturally, scripts in your HTML will most likely not be run, as this is a security issue, and some Markdown renderers may not render the HTML correctly at all.
+For example, subscripts:
+
+```
+H<sub>2</sub>O
+```
+
+H<sub>2</sub>O
+
+Naturally, scripts in your HTML will most likely not be run, as this is a security issue, and some Markdown renderers may not render the HTML correctly at all. GitHub for example is very restrictive on what it will show for security reasons. It will remove many properties including inline-styles.
 
 ```html
 <div style="display: flex; justify-content: space-between">
@@ -38,8 +46,6 @@ Naturally, scripts in your HTML will most likely not be run, as this is a securi
 Depending on where you are viewing this, you may see the below intended look or something not quite the same.
 
 ![Expected HTML result](images/HtmlExpected.png)
-
-GitHub for example is very restrictive on what it will show for security reasons. It will remove many properties including inline styles.
 
 # Tables
 
