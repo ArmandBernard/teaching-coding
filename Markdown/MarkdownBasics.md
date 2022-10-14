@@ -24,7 +24,6 @@ To explain what markdown is and its basic syntax.
   - [Code](#code)
     - [Inline](#inline)
     - [Code block](#code-block)
-    - [Code blocks with syntax highlighting](#code-blocks-with-syntax-highlighting)
   - [Horizontal rules (lines)](#horizontal-rules-lines)
   - [Links and images](#links-and-images)
     - [Links](#links)
@@ -210,25 +209,7 @@ if (itNeedsDoing) {
 }
 ```
 
-### Code blocks with syntax highlighting
-
-GitHub and some IDE's will allow you to add language information to your code block. This will provide automatic syntax highlighting to the code with minimal effort, making it easier to read.
-
-``````
-```js
-// code blocks are good for showing multiple lines of code
-if (itNeedsDoing) {
-    doIt()
-}
-```
-``````
-
-```js
-// code blocks are good for showing multiple lines of code
-if (itNeedsDoing) {
-    doIt()
-}
-```
+See [Advanced Markdown](AdvancedMarkdown.md) for information about syntax highlighting.
 
 ## Horizontal rules (lines)
 

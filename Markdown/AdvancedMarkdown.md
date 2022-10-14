@@ -14,6 +14,8 @@ To specifically see what GitHub supports, see [this spec](https://github.github.
 - [Contents](#contents)
 - [Using HTML](#using-html)
 - [Tables](#tables)
+- [Syntax highlighting](#syntax-highlighting)
+    - [Code blocks with syntax highlighting](#code-blocks-with-syntax-highlighting)
 
 # Using HTML
 
@@ -55,3 +57,24 @@ Tables are a bit of a pain to type nicely, but extensions like [Markdown All in 
 | Nicholas | A     |
 | Fabien   | C     |
 
+# Syntax highlighting
+
+### Code blocks with syntax highlighting
+
+GitHub and some IDE's will allow you to add language information to your code block. This will provide automatic syntax highlighting to the code with minimal effort, making it easier to read.
+
+``````
+```js
+// code blocks are good for showing multiple lines of code
+if (itNeedsDoing) {
+    doIt()
+}
+```
+``````
+
+```js
+// code blocks are good for showing multiple lines of code
+if (itNeedsDoing) {
+    doIt()
+}
+```
