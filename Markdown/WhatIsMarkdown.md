@@ -25,6 +25,10 @@ To explain what markdown is and what it can be used for.
     - [Inline](#inline)
     - [Code block](#code-block)
     - [Code blocks with syntax highlighting](#code-blocks-with-syntax-highlighting)
+  - [Horizontal rules (lines)](#horizontal-rules-lines)
+  - [Links and images](#links-and-images)
+    - [Links](#links)
+    - [Images](#images)
 
 # What is Markdown?
 
@@ -225,3 +229,42 @@ if (itNeedsDoing) {
     doIt()
 }
 ```
+
+## Horizontal rules (lines)
+
+Horizontal lines can be added to split up the document.
+
+```
+---
+```
+
+---
+
+## Links and images
+
+Links can be made to external websites or local files.
+
+### Links
+
+Links that are not embedded are typed like this:
+
+```
+[Wikipedia](https://en.wikipedia.org/)
+```
+[Wikipedia](https://en.wikipedia.org/)
+
+Local files can be linked using relative paths.
+
+```
+[README.md](../README.md)
+```
+[README.md](../README.md)
+
+### Images
+
+Links to images will work fine, but if you want to embed them, you'll need to add a `!`:
+
+```
+![Wikipedia's logo](https://en.wikipedia.org/static/images/project-logos/enwiki.png)
+```
+![Wikipedia's logo](https://en.wikipedia.org/static/images/project-logos/enwiki.png)
