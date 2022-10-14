@@ -6,7 +6,9 @@ Note that not all features here will be supported by every Markdown renderer.
 
 See [this page](https://www.markdownguide.org/extended-syntax/) for more information.
 
-To specifically see what GitHub supports, see [this spec](https://github.github.com/gfm/)
+To specifically see what flavour of Markdown GitHub supports, see [this spec](https://github.github.com/gfm/)
+
+GitHub also supports other extended markdown stuff like mathematical expressions, flowcharts and more. See their documentation page [here](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting).
 
 # Contents
 
@@ -33,8 +35,8 @@ Naturally, scripts in your HTML will most likely not be run, as this is a securi
 
 ```html
 <div style="display: flex; justify-content: space-between">
-    <span style="color: firebrick">Red left</span>
-    <span style="color: dodgerblue">Blue right</span>
+  <span style="color: firebrick">Red left</span>
+  <span style="color: dodgerblue">Blue right</span>
 </div>
 ```
 
@@ -69,18 +71,18 @@ Tables are a bit of a pain to type nicely, but extensions like [Markdown All in 
 
 GitHub and some IDE's will allow you to add language information to your code block. This will provide automatic syntax highlighting to the code with minimal effort, making it easier to read.
 
-``````
+````
 ```js
 // code blocks are good for showing multiple lines of code
 if (itNeedsDoing) {
     doIt()
 }
 ```
-``````
+````
 
 ```js
 // code blocks are good for showing multiple lines of code
 if (itNeedsDoing) {
-    doIt()
+  doIt();
 }
 ```
