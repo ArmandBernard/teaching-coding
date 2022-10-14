@@ -1,6 +1,6 @@
 # Purpose
 
-To explain what markdown is and what it can be used for.
+To explain what markdown is and its basic syntax.
 
 # Contents
 
