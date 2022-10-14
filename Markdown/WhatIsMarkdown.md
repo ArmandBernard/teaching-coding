@@ -21,6 +21,10 @@ To explain what markdown is and what it can be used for.
     - [Ordered Lists](#ordered-lists)
     - [Mixed and nested](#mixed-and-nested)
     - [Checkboxes](#checkboxes)
+  - [Code](#code)
+    - [Inline](#inline)
+    - [Code block](#code-block)
+    - [Code blocks with syntax highlighting](#code-blocks-with-syntax-highlighting)
 
 # What is Markdown?
 
@@ -170,3 +174,54 @@ These may not be supported on every platform, but they are supported on GitHub.
 - [x] I've done this
 - [ ] But not this
 
+## Code
+
+Code, or monospaced text, can be shown in a few different ways.
+
+### Inline
+
+```
+I have set `numberOfChickens` to 2.
+```
+
+I have set `numberOfChickens` to 2.
+
+### Code block
+
+These are what I use in all the previous examples.
+
+``````
+```
+// code blocks are good for showing multiple lines of code
+if (itNeedsDoing) {
+    doIt()
+}
+```
+``````
+
+```
+// code blocks are good for showing multiple lines of code
+if (itNeedsDoing) {
+    doIt()
+}
+```
+
+### Code blocks with syntax highlighting
+
+GitHub and some IDE's will allow you to add language information to your code block. This will provide automatic syntax highlighting to the code with minimal effort, making it easier to read.
+
+``````
+```js
+// code blocks are good for showing multiple lines of code
+if (itNeedsDoing) {
+    doIt()
+}
+```
+``````
+
+```js
+// code blocks are good for showing multiple lines of code
+if (itNeedsDoing) {
+    doIt()
+}
+```
