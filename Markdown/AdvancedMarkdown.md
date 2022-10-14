@@ -6,6 +6,8 @@ Note that not all features here will be supported by every Markdown renderer.
 
 See [this page](https://www.markdownguide.org/extended-syntax/) for more information.
 
+To specifically see what GitHub supports, see [this spec](https://github.github.com/gfm/)
+
 # Contents
 
 - [Purpose](#purpose)
