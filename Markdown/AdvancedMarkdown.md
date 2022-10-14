@@ -13,6 +13,7 @@ To specifically see what GitHub supports, see [this spec](https://github.github.
 - [Purpose](#purpose)
 - [Contents](#contents)
 - [Using HTML](#using-html)
+- [Tables](#tables)
 
 # Using HTML
 
@@ -31,3 +32,20 @@ Naturally, scripts in your HTML will most likely not be run, as this is a securi
     <span style="color: firebrick">Red left</span>
     <span style="color: dodgerblue ">Blue right</span>
 </div>
+
+# Tables
+
+Tables are a bit of a pain to type nicely, but extensions like [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one) will automatically clean them up for you.
+
+```
+| Student  | Grade |
+| -------- | ----- |
+| Nicholas | A     |
+| Fabien   | C     |
+```
+
+| Student  | Grade |
+| -------- | ----- |
+| Nicholas | A     |
+| Fabien   | C     |
+
