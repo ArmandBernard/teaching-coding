@@ -24,3 +24,24 @@ Much of its basic syntax is supported on messaging apps like Discord and Slack, 
 Almost all of the documentation you see in this project is written in Markdown!
 
 You can recognize a Markdown file by its `.md` extension.
+
+# Basic Syntax
+
+Here I will highlight the most common pieces of syntax you will likely want to use with Markdown.
+
+## Headers
+
+Headers can be done by adding a `#` (hash) at the start of a line, with the number of hashes indicating the header level. More hashes means a lower heading level.
+
+Input:
+```
+# Heading 1
+## Heading 2
+### Heading 3
+```
+
+Output:
+
+(I have used an image here because otherwise it would mess with my table of contents)
+
+![Headings](images/Headings.png)
