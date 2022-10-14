@@ -2,7 +2,10 @@
 
 To explain what markdown is and what it can be used for.
 
+# Contents
+
 - [Purpose](#purpose)
+- [Contents](#contents)
 - [What is Markdown?](#what-is-markdown)
 - [Basic Syntax](#basic-syntax)
   - [Headers](#headers)
