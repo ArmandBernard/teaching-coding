@@ -16,6 +16,7 @@ To explain the basics of JavaScript to someone who has never coded.
   - [Numbers](#numbers)
     - [Arithmetic](#arithmetic)
     - [Behaviours of numbers in JS](#behaviours-of-numbers-in-js)
+  - [Objects](#objects)
 
 # What is JavaScript?
 
@@ -179,3 +180,27 @@ I won't go into the intricacies of floating point and integers and how they act 
 - floating point numbers are typically numbers that have a decimal place e.g. `0.1, 12.3, 6000.0`
 
 This distinction is usually not very important in JavaScript at a beginner level, so I wouldn't worry about it too much.
+
+## Objects
+
+Objects are a way of storing multiple related numbers, strings and even other objects one variable.
+
+For example, you could create an object representing a cat.
+
+```js
+const cat = {
+  name: "Josh",
+  weight: 10.2,
+  age: 4,
+};
+```
+
+The name, weight and age are all `properties` on the `cat` object. The `:` acts a little like a `=` here, allowing you to set that property.
+
+You can access the values of a property using the dot (`.`) syntax.
+
+```js
+const a = cat.age; // a is now 4
+
+cat.weight = 10.4; // the weight of the cat is now 10.4
+```
