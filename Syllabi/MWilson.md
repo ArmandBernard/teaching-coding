@@ -41,9 +41,10 @@ Previous dev experience basically none. Seems to be interested in web stuff.
     - Inline-block
     - Flex
   - Font
-- Getting started with JavaScript
+- [Getting started with JavaScript](../HtmlCssJs/BasicsOfJS.md)
   - [Running code in the browser](../HtmlCssJs/AddingScripts.md)
   - Variables and data types
+    - `const` vs `let`
     - numbers
     - strings
     - objects
