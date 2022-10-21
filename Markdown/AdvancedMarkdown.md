@@ -19,7 +19,7 @@ GitHub also supports other extended markdown stuff like mathematical expressions
   - [Collapsed Sections](#collapsed-sections)
 - [Tables](#tables)
 - [Syntax highlighting](#syntax-highlighting)
-    - [Code blocks with syntax highlighting](#code-blocks-with-syntax-highlighting)
+  - [Code blocks with syntax highlighting](#code-blocks-with-syntax-highlighting)
 - [Mathematical equations](#mathematical-equations)
 - [Diagrams with Mermaid](#diagrams-with-mermaid)
   - [Flowcharts](#flowcharts)
@@ -54,9 +54,7 @@ Depending on where you are viewing this, you may see the below intended look or 
 You can do superscript and subscript using the HTML `<sub>` and `<sup>` tags:
 
 ```html
-H<sub>2</sub>O
-
-y = mx<sup>2</sup>
+H<sub>2</sub>O y = mx<sup>2</sup>
 ```
 
 H<sub>2</sub>O
@@ -71,8 +69,8 @@ Collapsible sections can be created using the `<details>` and `<summary></summar
 
 ```html
 <details>
-    <summary>Goodies inside</summary>
-    🍬🍭🍫
+  <summary>Goodies inside</summary>
+  🍬🍭🍫
 </details>
 ```
 
@@ -147,6 +145,10 @@ Diagrams can be made and rendered using [Mermaid](https://mermaid-js.github.io/m
 
 Make sure to install [some extensions](../VSCode/UsefulExtensions.md#markdown) so you can preview these in VSCode.
 
+They should look something like this when rendered on GitHub:
+
+![Mermaid Flowchart](images/MermaidFlowchart.png)
+
 ## Flowcharts
 
 Flowcharts are highly configurable and are useful for showing what order actions should be taken in.
@@ -178,7 +180,7 @@ graph LR;
     eslint;
     end
 
-    React;    
+    React;
 
     Git-->VS;
 
@@ -221,7 +223,7 @@ graph LR;
     eslint;
     end
 
-    React;    
+    React;
 
     Git-->VS;
 
@@ -285,7 +287,7 @@ gantt
 
 ````
 ```mermaid
-pie 
+pie
     title Project language split
     "TypeScript" : 86.3
     "JavaScript" : 8.1
@@ -294,9 +296,8 @@ pie
 ```
 ````
 
-
 ```mermaid
-pie 
+pie
     title Project language split
     "TypeScript" : 86.3
     "JavaScript" : 8.1
