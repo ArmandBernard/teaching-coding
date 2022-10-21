@@ -31,3 +31,7 @@ This file outlines some useful VS Code Extensions you may need for various thing
 ## Markdown
 
 [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one) - If you're editing documentation like that covered in this project, this helps.
+
+[Markdown Preview Mermaid Support](https://marketplace.visualstudio.com/items?itemName=bierner.markdown-mermaid)
+
+[Mermaid Markdown Syntax Highlighting](https://marketplace.visualstudio.com/items?itemName=bpruitt-goddard.mermaid-markdown-syntax-highlighting)
