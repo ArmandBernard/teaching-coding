@@ -21,6 +21,11 @@ GitHub also supports other extended markdown stuff like mathematical expressions
 - [Syntax highlighting](#syntax-highlighting)
     - [Code blocks with syntax highlighting](#code-blocks-with-syntax-highlighting)
 - [Mathematical equations](#mathematical-equations)
+- [Diagrams with Mermaid](#diagrams-with-mermaid)
+  - [Flowcharts](#flowcharts)
+  - [Gantt Charts](#gantt-charts)
+  - [Pie Charts](#pie-charts)
+  - [Git Graph](#git-graph)
 
 # Using HTML
 
@@ -135,3 +140,186 @@ $$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$
 ```
 
 $$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$
+
+# Diagrams with Mermaid
+
+Diagrams can be made and rendered using [Mermaid](https://mermaid-js.github.io/mermaid/#/).
+
+Make sure to install [some extensions](../VSCode/UsefulExtensions.md#markdown) so you can preview these in VSCode.
+
+## Flowcharts
+
+Flowcharts are highly configurable and are useful for showing what order actions should be taken in.
+
+[Mermaid documentation](https://mermaid-js.github.io/mermaid/#/flowchart)
+
+Also see the similar [State Diagrams](https://mermaid-js.github.io/mermaid/#/stateDiagram).
+
+````
+```mermaid
+graph LR;
+    subgraph Dev Basics
+    Git[Git and GitHub]
+    VS[VS Code]
+    end
+
+    JS[JavaScript];
+
+    subgraph The Web
+    HTML;
+    CSS;
+    PM[Page Manipulation];
+    end
+
+    subgraph JS Back-End
+    Node;
+    npm;
+    build;
+    eslint;
+    end
+
+    React;    
+
+    Git-->VS;
+
+    CSS-->PM;
+    HTML-->PM;
+    VS-->JS;
+    JS-->PM;
+
+    Node-->npm
+    Node-->build
+    npm-->eslint
+    JS-->Node
+
+    npm-->React
+    CSS-->React
+    HTML-->React
+    JS-->React
+```
+````
+
+```mermaid
+graph LR;
+    subgraph Dev Basics
+    Git[Git and GitHub]
+    VS[VS Code]
+    end
+
+    JS[JavaScript];
+
+    subgraph The Web
+    HTML;
+    CSS;
+    PM[Page Manipulation];
+    end
+
+    subgraph JS Back-End
+    Node;
+    npm;
+    build;
+    eslint;
+    end
+
+    React;    
+
+    Git-->VS;
+
+    CSS-->PM;
+    HTML-->PM;
+    VS-->JS;
+    JS-->PM;
+
+    Node-->npm
+    Node-->build
+    npm-->eslint
+    JS-->Node
+
+    npm-->React
+    CSS-->React
+    HTML-->React
+    JS-->React
+```
+
+## Gantt Charts
+
+Gantt charts are all about showing tasks on a timeline.
+
+[Mermaid documentation](https://mermaid-js.github.io/mermaid/#/gantt)
+
+````
+```mermaid
+gantt
+    dateFormat  YYYY-MM-DD
+    title A nice Gantt Chart
+    excludes weekdays 2014-01-10
+
+    section Cameron
+    Teach Cameron            :done, 2022-07-12, 2022-07-28
+    section Millie
+    Teach Web Basics  :done, mil1, 2022-07-12, 2022-10-16
+    Teach JavaScript  :active, mil2, after mil1, 2022-10-30
+    Teach React       : mil4, after mil2, 30d
+    section Josh
+    Teach Josh               : 30d
+```
+````
+
+```mermaid
+gantt
+    dateFormat  YYYY-MM-DD
+    title A nice Gantt Chart
+    excludes weekdays 2014-01-10
+
+    section Cameron
+    Teach Cameron            :done, 2022-07-12, 2022-07-28
+    section Millie
+    Teach Web Basics  :done, mil1, 2022-07-12, 2022-10-16
+    Teach JavaScript  :active, mil2, after mil1, 2022-10-30
+    Teach React       : mil4, after mil2, 30d
+    section Josh
+    Teach Josh               : 30d
+```
+
+## Pie Charts
+
+````
+```mermaid
+pie 
+    title Project language split
+    "TypeScript" : 86.3
+    "JavaScript" : 8.1
+    "CSS" : 5.3
+    "Shell": 0.3
+```
+````
+
+
+```mermaid
+pie 
+    title Project language split
+    "TypeScript" : 86.3
+    "JavaScript" : 8.1
+    "CSS" : 5.3
+    "Shell": 0.3
+```
+
+## Git Graph
+
+Used to show a git history, with branches.
+
+[Mermaid documentation](https://mermaid-js.github.io/mermaid/#/gitgraph)
+
+```mermaid
+    gitGraph
+       commit id:"create project"
+       commit id:"add .gitignore"
+       commit id:"upload existing files"
+       branch add-eslint
+       checkout add-eslint
+       commit id:"run setup wizard"
+       commit id:"tweak rules"
+       checkout main
+       merge add-eslint
+       commit id:"update readme"
+```
