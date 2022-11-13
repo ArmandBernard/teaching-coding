@@ -23,6 +23,7 @@ To explain the basics of JavaScript to someone who has never coded.
   - [Returning data](#returning-data)
     - [Multiple / early returns](#multiple--early-returns)
     - [`void` functions](#void-functions)
+  - [Calling a function](#calling-a-function)
 
 # What is JavaScript?
 
@@ -306,3 +307,27 @@ function logError(errorMessage) {
 ```
 
 Note that a void function does not need a return, unless you want to return early.
+
+## Calling a function
+
+When you want to run the code in a function, you `call` it.
+
+The calling syntax is the same, regardless of whether you defined it as an `arrow function` or regular `function`:
+
+```js
+// call a function and store its return value
+const variableToHoldReturnValue = functionName(parameter1, parameter2);
+```
+
+If it is a void function there is no return value, so no need to create a variable to store the return value:
+
+```js
+// call a function
+functionName(parameter1, parameter2);
+```
+
+Functions with no parameters still need brackets to call them:
+
+```js
+functionName();
+```
