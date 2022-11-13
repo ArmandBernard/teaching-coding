@@ -17,6 +17,12 @@ To explain the basics of JavaScript to someone who has never coded.
     - [Arithmetic](#arithmetic)
     - [Behaviours of numbers in JS](#behaviours-of-numbers-in-js)
   - [Objects](#objects)
+- [Functions](#functions)
+  - [Defining a function](#defining-a-function)
+    - [Parameters](#parameters)
+  - [Returning data](#returning-data)
+    - [Multiple / early returns](#multiple--early-returns)
+    - [`void` functions](#void-functions)
 
 # What is JavaScript?
 
@@ -204,3 +210,99 @@ const a = cat.age; // a is now 4
 
 cat.weight = 10.4; // the weight of the cat is now 10.4
 ```
+
+# Functions
+
+Functions, also known as methods, are pieces of code that can be run on demand.
+
+## Defining a function
+
+There are two ways of defining a function. First, the traditional `function` syntax:
+
+```js
+function functionName(parameter1, parameter2) {
+  /// The code the function runs goes in here
+}
+```
+
+Second, the `arrow function` syntax
+
+```js
+const functionName = (parameter1, parameter2) => {
+  /// The code the function runs goes in here
+};
+```
+
+Both are equivalent, but in some cases you'll only be able to use the arrow syntax.
+
+Here, the functionName is the name of the function, which you will need to `call` or use the function.
+
+### Parameters
+
+The `parameters` are defined inside the brackets. You can have as many or as few as you want. These are values you want the user of the function to provide.
+
+For example a function to add two numbers together would look a little like this:
+
+```js
+function addTwoNumbers(value1, value2) {
+  return value1 + value2;
+}
+```
+
+or
+
+```js
+const addTwoNumbers = (value1, value2) => {
+  return value1 + value2;
+};
+```
+
+Here `value1` and `value2` are the `parameters`.
+
+More on the `return` part in the next section.
+
+## Returning data
+
+When a function is done doing its thing, it should `return`.
+
+Going back to the `addTwoNumbers` example, the caller of the `addTwoNumbers` function would like to know the result of the calculation. To provide it to them, we need to `return` a value.
+
+When you `return` in a function, you are ending the execution of the function and, optionally, returning a result.
+
+### Multiple / early returns
+
+You may want to return early in certain scenarios, especially if the action you want to perform is not doable or requires another implementation.
+
+For example, say you want to make a division function, but want to avoid divide by zero errors. You could write a function like this:
+
+```js
+function divide(numerator, denominator) {
+  if (denominator === 0) {
+    // early return / alternative return path
+    return 0;
+  }
+
+  return numerator / denominator;
+}
+```
+
+### `void` functions
+
+Functions don't have to return data at all, they can just perform an action, then end.
+
+Good examples of this are the `console.log()` and `alert()` functions. You don't expect them to give you data, but just to perform an action.
+
+```js
+// log an error to the console with the date
+function logError(errorMessage) {
+  if (errorMessage === undefined) {
+    // early return with no data
+    return;
+  }
+
+  console.error(`[${new Date().toISOString()}][ERROR]: ${errorMessage}`);
+  // code just ends after this. No need to return.
+}
+```
+
+Note that a void function does not need a return, unless you want to return early.
