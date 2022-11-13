@@ -24,6 +24,7 @@ To explain the basics of JavaScript to someone who has never coded.
     - [Multiple / early returns](#multiple--early-returns)
     - [`void` functions](#void-functions)
   - [Calling a function](#calling-a-function)
+  - [Functions on Objects](#functions-on-objects)
 
 # What is JavaScript?
 
@@ -330,4 +331,60 @@ Functions with no parameters still need brackets to call them:
 
 ```js
 functionName();
+```
+
+## Functions on Objects
+
+Functions can also exist on `object`s.
+
+Say for example that you have objects of type `Person`:
+
+```ts
+// What is a person? 🤔
+interface Person {
+  name: string;
+  age: number;
+  height: {
+    feet: number;
+    inches: number;
+  };
+}
+```
+
+And you want to add a function that when called, describes the person. You could do this:
+
+```ts
+// What is a person? 🤔
+interface Person {
+  name: string;
+  age: number;
+  height: {
+    feet: number;
+    inches: number;
+  };
+  describe: () => void;
+}
+```
+
+The implementation could then be:
+
+```js
+// make a person
+const nico: Person = {
+  name: "nico",
+  age: 26,
+  height: {
+    feet: 5,
+    inches: 4,
+  },
+  describe: () => {
+    return `${nico.name} is ${nico.age} and ${nico.height.feet} foot ${nico.height.inches}`;
+  },
+};
+```
+
+You could then call the describe function later:
+
+```js
+const description = nico.describe();
 ```
