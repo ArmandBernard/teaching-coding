@@ -16,6 +16,10 @@ To explain the basics of JavaScript to someone who has never coded.
   - [Numbers](#numbers)
     - [Arithmetic](#arithmetic)
     - [Behaviours of numbers in JS](#behaviours-of-numbers-in-js)
+  - [Booleans](#booleans)
+    - [Logical Operators](#logical-operators)
+    - [Combining statements](#combining-statements)
+    - [Inverting statements](#inverting-statements)
   - [Objects](#objects)
 - [Functions](#functions)
   - [Defining a function](#defining-a-function)
@@ -194,6 +198,85 @@ I won't go into the intricacies of floating point and integers and how they act 
 - floating point numbers are typically numbers that have a decimal place e.g. `0.1, 12.3, 6000.0`
 
 This distinction is usually not very important in JavaScript at a beginner level, so I wouldn't worry about it too much.
+
+## Booleans
+
+The word "boolean" is used to describe a value that can be only `true` or `false`.
+
+When you make an statement that can either be true or false, also known as a **predicate**, such as "a is larger than b", the result is a boolean that can only be true or false.
+
+For example you can write:
+
+```js
+const a = 2;
+
+const b = 3;
+
+// predicate: a is larger than b. In this case, the result is false, which is saved into c
+const c = a > b;
+```
+
+### Logical Operators
+
+There are many operators or symbols you can use to make predicates. Here are some of them.
+
+**Equality**
+
+```js
+// a is equal to b
+a === b;
+
+// a is not equal to b:
+a !== b;
+```
+
+**Size**
+
+```js
+// a is larger than b
+a > b;
+
+// a is smaller than b
+a < b;
+
+// a is larger than or equal to b
+a >= b;
+
+// a is smaller than or equal to b
+a <= b;
+```
+
+### Combining statements
+
+You can combine multiple statements using logical _and_ and _or_ statements:
+
+**And**
+
+Use a double ampersand `&&`
+
+```js
+// a is smaller than b and c is equal to d
+a < b && c === d;
+```
+
+**Or**
+
+Uses a double bar characters `||`
+
+```js
+a != b || d < e;
+```
+
+### Inverting statements
+
+You can invert a statement by applying a **not** operator to it. This is done by placing an exclamation mark before the statement.
+
+```js
+// a is not larger than b
+!(a > b);
+```
+
+Of course, this is equivalent to `(a <= b)`, but sometimes it's easier to follow to use a not to make it easier to understand in context.
 
 ## Objects
 
