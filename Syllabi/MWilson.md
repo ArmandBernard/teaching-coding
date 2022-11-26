@@ -44,22 +44,21 @@ Previous dev experience basically none. Seems to be interested in web stuff.
 - [Getting started with JavaScript](../HtmlCssJs/BasicsOfJS.md)
   - [Running code in the browser](../HtmlCssJs/AddingScripts.md)
   - Variables and data types
-    - `const` vs `let`
-    - numbers
-    - strings
-    - objects
-  - Methods (aka functions)
+    - [Variables](../HtmlCssJs/BasicsOfJS.md#variables)
+    - [numbers](../HtmlCssJs/BasicsOfJS.md#numbers)
+      - [Arithmetic](../HtmlCssJs/BasicsOfJS.md#arithmetic)
+    - [strings](../HtmlCssJs/BasicsOfJS.md#strings)
+    - [objects](../HtmlCssJs/BasicsOfJS.md#objects)
   - Comments
-  - [Modifying a webpage with JavaScript](../HtmlCssJs/ChangingPagesWithScripts.md)
   - Printing to the console
+  - [Functions](../HtmlCssJs/BasicsOfJS.md#functions)
+  - [Modifying a webpage with JavaScript](../HtmlCssJs/ChangingPagesWithScripts.md)
   - Working with strings
     - Concatenation
     - Interpolation
-  - Arithmetic
-  - If statements
-  - Arrays
-  - Loops
-  - map, filter, reduce
+  - Conditional statements
+  - [Arrays](../HtmlCssJs/BasicsOfJS.md#arrays)
+  - [Array functions](../HtmlCssJs/BasicsOfJS.md#array-functions): map, filter, reduce
 
 # Setting up Node
 
