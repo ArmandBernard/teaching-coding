@@ -25,6 +25,9 @@ To explain the basics of JavaScript to someone who has never coded.
     - [`void` functions](#void-functions)
   - [Calling a function](#calling-a-function)
   - [Functions on Objects](#functions-on-objects)
+- [Arrays](#arrays)
+  - [Initializing arrays](#initializing-arrays)
+  - [Indexing an Array](#indexing-an-array)
 
 # What is JavaScript?
 
@@ -387,4 +390,57 @@ You could then call the describe function later:
 
 ```js
 const description = nico.describe();
+```
+
+# Arrays
+
+Arrays allow you to hold multiple values in a specific order, kind of like a list.
+
+## Initializing arrays
+
+Arrays can be **initialized** or created using square brackets:
+
+```js
+const myArray = [13, 5, 7, 9];
+```
+
+The above array has 4 **elements** or items.
+
+In TypeScript, you can define an array based on what it is meant to hold:
+
+```ts
+const myArray: number[] = [13, 5, 7, 9];
+```
+
+## Indexing an Array
+
+You can access a specific item in an array by **indexing** it. To do this, you need to know which position it has in the array, know as its **index**.
+
+Like most programming languages, JavaScript uses **zero-based indexing**. This means you start counting from zero, rather than one.
+
+The first item in an array has index 0, the next one has index 1, then 2 etc.
+
+To index an array, you use a syntax like this:
+
+```js
+// get
+const a = myArray[index];
+
+// set
+myArray[index] = b;
+```
+
+Here are some examples:
+
+```js
+const myArray = [13, 5, 7, 9];
+
+// this gives a === 5, as we start counting from 0
+const a = myArray[1];
+
+// this gives b === 7
+const b = myArray[2];
+
+// the array will now be [3, 5, 7, 9]
+myArray[0] = 3;
 ```
