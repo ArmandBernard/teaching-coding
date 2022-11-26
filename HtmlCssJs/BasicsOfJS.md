@@ -30,6 +30,7 @@ To explain the basics of JavaScript to someone who has never coded.
   - [Indexing an Array](#indexing-an-array)
   - [Array functions](#array-functions)
     - [Filter](#filter)
+    - [Map](#map)
 
 # What is JavaScript?
 
@@ -467,6 +468,14 @@ const newArray = myArray.filter((item) => predicateUsingItem);
 
 Note that the **original array is not modified**. Calling the filter function returns a **new filtered array**.
 
+```mermaid
+graph LR;
+A[old array: 1, 3, 4, 7]
+Fun[filter: a => a > 3]
+B[new array: 4, 7]
+A===>Fun===>B
+```
+
 Here a **predicate** is a statement that returns true or false.
 
 For example: `a > 2`, `someCondition === true`, `isEven || isNegative` are all predicates.
@@ -492,4 +501,48 @@ Here's another example with strings:
 const filtered = ["Short", "Acceptable", "Way too long"].filter(
   (s) => s.length < 10
 );
+```
+
+### Map
+
+The map function allows you to **transform** each element an array in a controlled way.
+
+```mermaid
+graph LR;
+A[old array: 1, 3, 4, 7]
+Fun[map x => 2 * x]
+B[new array: 2, 6, 8, 14]
+A===>Fun===>B
+```
+
+To use it, you must provide a function that takes an element and returns the new value you want to have back.
+
+It returns the same amount of items as you started.
+
+For example doubling every number:
+
+```js
+const myArray = [1, 3, 4, 7];
+
+// multiply every item by 2: [2, 6, 8, 14]
+const newArray = myArray.map((x) => 2 * x);
+```
+
+You can also use it to get specific values on an object:
+
+```js
+cat1 = {
+  weight: 4,
+  length: 0.45,
+};
+
+cat2 = {
+  weight: 4.5,
+  length: 0.5,
+};
+
+const catArray = [cat1, cat2];
+
+// [4, 4.5]
+catWeights = catArray.map((cat) => cat.weight);
 ```
