@@ -28,6 +28,8 @@ To explain the basics of JavaScript to someone who has never coded.
 - [Arrays](#arrays)
   - [Initializing arrays](#initializing-arrays)
   - [Indexing an Array](#indexing-an-array)
+  - [Array functions](#array-functions)
+    - [Filter](#filter)
 
 # What is JavaScript?
 
@@ -443,4 +445,51 @@ const b = myArray[2];
 
 // the array will now be [3, 5, 7, 9]
 myArray[0] = 3;
+```
+
+## Array functions
+
+Arrays are a very powerful way of doing the same thing to multiple items.
+
+There are therefore many functions available with arrays that allow you to manipulate them. Usually they are accessed using the **dot** syntax.
+
+Most of them will use **arrow functions** as parameters, so that you can tell them what action to perform or what check to complete on each item.
+
+Here are some of the most common ones.
+
+### Filter
+
+Say you only want some of your items, so you want to filter them by some condition or set of condition. The `filter` function is best for this.
+
+```js
+const newArray = myArray.filter((item) => predicateUsingItem);
+```
+
+Note that the **original array is not modified**. Calling the filter function returns a **new filtered array**.
+
+Here a **predicate** is a statement that returns true or false.
+
+For example: `a > 2`, `someCondition === true`, `isEven || isNegative` are all predicates.
+
+If the predicate returns `true`, the item is **included** the returned array, if `false`, it is not included.
+
+Here is an example of how you could filter items to only keep values larger than 4:
+
+```js
+const variousNumbers = [1, 3, 5, 8, 9];
+
+// The left part of the arrow function says given item "n", keep items above 4.
+const filteredNumbers = variousNumbers.filter((n) => n > 4);
+
+// [5, 8, 9]
+console.log(filteredNumbers);
+```
+
+Here's another example with strings:
+
+```js
+// filtering by length of string, returns ["Short", "Acceptable"]
+const filtered = ["Short", "Acceptable", "Way too long"].filter(
+  (s) => s.length < 10
+);
 ```
