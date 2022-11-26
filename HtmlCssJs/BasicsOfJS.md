@@ -35,6 +35,7 @@ To explain the basics of JavaScript to someone who has never coded.
   - [Array functions](#array-functions)
     - [Filter](#filter)
     - [Map](#map)
+    - [Join](#join)
 
 # What is JavaScript?
 
@@ -628,4 +629,21 @@ const catArray = [cat1, cat2];
 
 // [4, 4.5]
 catWeights = catArray.map((cat) => cat.weight);
+```
+
+### Join
+
+Join is specifically for arrays of strings. It allows you to join all the strings in an array into one string.
+
+When you do this, you usually also provide a separator, which is a string that will be placed between every joint string. This is good for representing lists of items.
+
+```js
+const myArray [1, 2, 3, 4];
+
+// join with dots
+const joinedString = myArray.join(".")
+
+// output: "1.2.3.4"
+console.log(joinedString);
+
 ```
