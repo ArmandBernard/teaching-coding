@@ -59,6 +59,14 @@ Previous dev experience basically none. Seems to be interested in web stuff.
   - Conditional statements
   - [Arrays](../HtmlCssJs/BasicsOfJS.md#arrays)
   - [Array functions](../HtmlCssJs/BasicsOfJS.md#array-functions): map, filter, reduce
+- React
+  - [Basics of React](../React/ReactBasics.md)
+    - [State](../React/ReactBasics.md#state)
+    - Components
+    - Conditional rendering
+    - UseEffect
+    - Prop drilling
+    - Context
 
 # Setting up Node
 
