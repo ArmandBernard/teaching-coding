@@ -36,6 +36,7 @@ To explain the basics of JavaScript to someone who has never coded.
     - [Filter](#filter)
     - [Map](#map)
     - [Join](#join)
+    - [Chaining functions](#chaining-functions)
 
 # What is JavaScript?
 
@@ -635,7 +636,7 @@ catWeights = catArray.map((cat) => cat.weight);
 
 Join is specifically for arrays of strings. It allows you to join all the strings in an array into one string.
 
-When you do this, you usually also provide a separator, which is a string that will be placed between every joint string. This is good for representing lists of items.
+When you do this, you usually also provide a **separator**, which is a string that will be placed between every joint string. This is good for representing lists of items.
 
 ```js
 const myArray [1, 2, 3, 4];
@@ -646,4 +647,20 @@ const joinedString = myArray.join(".")
 // output: "1.2.3.4"
 console.log(joinedString);
 
+```
+
+### Chaining functions
+
+Array functions almost always return another function without mutating the original. Therefore, you can chain them one after the other very easily.
+
+```js
+// Get every string in a list above 6 characters, uppercase it and output it with commas between items
+
+const phrases = ["short", "Your Best Nightmare", "everyone burns"];
+
+// output: "YOUR BEST NIGHTMARE, EVERYONE BURNS"
+const joined = phrases
+  .filter((x) => x.length > 6)
+  .map((x) => x.toUpperCase())
+  .join(", ");
 ```
