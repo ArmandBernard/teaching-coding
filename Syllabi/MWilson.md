@@ -61,11 +61,13 @@ Previous dev experience basically none. Seems to be interested in web stuff.
   - [Array functions](../HtmlCssJs/BasicsOfJS.md#array-functions): map, filter, reduce
 - React
   - [Basics of React](../React/ReactBasics.md)
-    - [State](../React/ReactBasics.md#state)
     - Components
+      - Anatomy
+      - [State](../React/ReactBasics.md#state)
+      - Passing props
+      - `children` prop
     - Conditional rendering
     - UseEffect
-    - Prop drilling
     - Context
 
 # Setting up Node
