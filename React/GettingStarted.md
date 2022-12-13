@@ -12,9 +12,11 @@ To explain how to get a React project up and running.
   - [Setup Node](#setup-node)
   - [Vite setup](#vite-setup)
     - [Wizard](#wizard)
-  - [Created files](#created-files)
+    - [Created files](#created-files)
   - [Installing packages](#installing-packages)
   - [Running the project](#running-the-project)
+  - [Other stuff you may want to do](#other-stuff-you-may-want-to-do)
+    - [Remove the example application contents.](#remove-the-example-application-contents)
 
 # Options
 
@@ -100,7 +102,7 @@ If you see an option for SWC... I'm not sure what that is, some [Rust-based acce
 
 After these options, Vite should create a project folder in the current directory, named after your project.
 
-## Created files
+### Created files
 
 The files created by Vite may change as the template does, but your project structure should look something like this:
 
@@ -128,9 +130,7 @@ The files created by Vite may change as the template does, but your project stru
 
 Vite creates a very basic project that shows Vite working.
 
-Once you've seen it working once, you will likely want to remove most of the contents of `App.tsx`; all of `App.css` and `index.css`; and the asset `react.svg`.
-
-I'll leave that to you, though. If you're reading this, you should probably know how HTML, CSS and JS works, so you should be able to remove the broken imports etc that comes with those deletions.
+It has some files you may want to remove to make the project yours. I'll leave that to your discretion.
 
 ## Installing packages
 
@@ -167,3 +167,13 @@ Your console output will look something like this:
 Your project is now running, and the link provided will open your app in your browser!
 
 To stop Vite, simply close the terminal or close the process (Ctrl + C in most shells).
+
+## Other stuff you may want to do
+
+[Install and set up ESLint](../Node/SettingUpESLint.md)
+
+### Remove the example application contents.
+
+Once you've seen it working once, you will likely want to remove most of the contents of `App.tsx`; all of `App.css` and `index.css`; and the asset `react.svg`.
+
+I'll leave that to you, though. If you're reading this, you should probably know how HTML, CSS and JS works, so you should be able to remove the broken imports etc that comes with those deletions.
