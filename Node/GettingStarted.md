@@ -23,7 +23,9 @@ Get you up and running with Node.js! Running through the below steps will create
 
 Initialise node
 
-`npm init -y`
+`npm init`
+
+Optionally, add ` -y` to the above go with defaults.
 
 Enable ESModule syntax by adding
 `"type": "module"` to package.json.
