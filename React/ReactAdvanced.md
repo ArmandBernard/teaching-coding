@@ -8,7 +8,11 @@ To explain the more advanced hooks and behaviour of React.
 - [Contents](#contents)
 - [`useEffect`](#useeffect)
   - [Anatomy](#anatomy)
+  - [The effect](#the-effect)
   - [Dependencies](#dependencies)
+  - [Caveats](#caveats)
+    - [Effect not triggering when expected / triggering every refresh](#effect-not-triggering-when-expected--triggering-every-refresh)
+    - [Double triggers on load](#double-triggers-on-load)
 - [Mounting and unmounting](#mounting-and-unmounting)
   - [Example](#example)
   - [How do I avoid unmounting?](#how-do-i-avoid-unmounting)
@@ -17,7 +21,7 @@ To explain the more advanced hooks and behaviour of React.
 
 # `useEffect`
 
-`useEffect` is a hook that can be used to trigger code in components when **state or props change**.
+`useEffect` is a hook that allows you to run a piece of code only when specified pieces of **state or props change**.
 
 For example, perhaps you only want to fetch data on component load. Or maybe you want to load in a library or set up some resources.
 
@@ -38,9 +42,36 @@ useEffect(
 );
 ```
 
+## The effect
+
+The effect is the main body of code provided in the first argument.
+
+It is the code you intend to run when the dependencies require it to.
+
 ## Dependencies
 
-Dependencies are what will trigger. If left empty, useEffect will only trigger once on [mount](#mounting-and-unmounting).
+Dependencies are what will trigger the effect. They are provided as the second argument of the hook.
+
+If left empty, `useEffect` will only trigger once on [mount](#mounting-and-unmounting).
+
+Not providing a second argument at all is not recommended, as it will cause the affect to trigger on every render, which is usually not the intended use-case.
+
+## Caveats
+
+### Effect not triggering when expected / triggering every refresh
+
+Because dependencies use `Object.is()` for comparison, a reference change will trigger it.
+To understand this better, look up _reference types in JavaScript_.
+
+The gist of it is that you may have an array with the same items inside or an object with the same properties, but if it isn't **the same object or array** because (for example, it has been reconstructed) it will be considered changed.
+
+### Double triggers on load
+
+React Strict Mode will mount, unmount and remount your component on page load. This is a test to see if you are correctly cleaning things up, so make sure you do so!
+
+Your logic should not rely on something only being called only once. If it does, it should ensure that any resources that were created are correctly disposed of in the clean-up function.
+
+For example, say that you load a script into the page on component mount. You should remove it on component unmount or undo its effects so that when the component is remounted it does result in duplicated effects!
 
 # Mounting and unmounting
 
