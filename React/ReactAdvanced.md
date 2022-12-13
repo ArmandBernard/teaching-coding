@@ -16,8 +16,9 @@ To explain the more advanced hooks and behaviour of React.
 - [`useMemo`](#usememo)
   - [When to use](#when-to-use)
   - [Anatomy](#anatomy-1)
-- [Mounting and unmounting](#mounting-and-unmounting)
   - [Example](#example)
+- [Mounting and unmounting](#mounting-and-unmounting)
+  - [Example](#example-1)
   - [How do I avoid unmounting?](#how-do-i-avoid-unmounting)
     - [Prop drilling](#prop-drilling)
     - [Hiding with CSS](#hiding-with-css)
@@ -105,6 +106,73 @@ const calculatedValue = useMemo(
 ```
 
 The arrow function above will only be performed if `a` or `b` changes.
+
+## Example
+
+The below example demonstrates how useMemo can be useful.
+
+Imagine in this case that a + b is a slow calculation.
+
+Every character typed into the first input will cause the component to rerender and therefore all code to re-run.
+This includes the a + b calculation, that has nothing to do with the first input and does not need to be recalculated.
+
+```jsx
+const Example = () => {
+  const [a, setA] = useState(0);
+  const [b, setB] = useState(0);
+
+  // "heavy" calculation
+  const c = a + b;
+  console.log(`c was recalculated as ${c}`);
+
+  return (
+    <div style={{ display: "flex", flexDirection: "column" }}>
+      <label>
+        Text input that causes component rerender but does not relate to the
+        calculation <input type="text" />
+      </label>
+      <label>
+        a{" "}
+        <input
+          type="number"
+          value={a}
+          onChange={(e) => setA(e.target.valueAsNumber)}
+        />
+      </label>
+      <label>
+        b{" "}
+        <input
+          type="number"
+          value={b}
+          onChange={(e) => setB(e.target.valueAsNumber)}
+        />
+      </label>
+      Sum: {c}
+    </div>
+  );
+};
+```
+
+By using useMemo, we can ensure that c is only recalculated when needed, i.e. when a or b (its dependencies) change.
+
+```jsx
+const Example = () => {
+  const [a, setA] = useState(0);
+  const [b, setB] = useState(0);
+
+  const c = useMemo(() => {
+    // "heavy" calculation
+    const calcC = a + b;
+    console.log(`c was recalculated as ${calcC}`);
+
+    return calcC;
+  }, [a, b]);
+
+  return (...); // unchanged render code omitted for brevity
+};
+```
+
+You can check all this by opening your browser's dev console and seeing when the recalculation message is logged.
 
 # Mounting and unmounting
 
