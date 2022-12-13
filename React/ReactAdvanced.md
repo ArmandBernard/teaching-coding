@@ -13,6 +13,9 @@ To explain the more advanced hooks and behaviour of React.
   - [Caveats](#caveats)
     - [Effect not triggering when expected / triggering every refresh](#effect-not-triggering-when-expected--triggering-every-refresh)
     - [Double triggers on load](#double-triggers-on-load)
+- [`useMemo`](#usememo)
+  - [When to use](#when-to-use)
+  - [Anatomy](#anatomy-1)
 - [Mounting and unmounting](#mounting-and-unmounting)
   - [Example](#example)
   - [How do I avoid unmounting?](#how-do-i-avoid-unmounting)
@@ -72,6 +75,36 @@ React Strict Mode will mount, unmount and remount your component on page load. T
 Your logic should not rely on something only being called only once. If it does, it should ensure that any resources that were created are correctly disposed of in the clean-up function.
 
 For example, say that you load a script into the page on component mount. You should remove it on component unmount or undo its effects so that when the component is remounted it does result in duplicated effects!
+
+See also [mounting and unmounting](#mounting-and-unmounting).
+
+# `useMemo`
+
+The `useMemo` hook is used to prevent expensive recalculations from being frequently and unnecessarily repeated by caching their results.
+
+It works by performing the calculation only when the dependencies change.
+
+## When to use
+
+This hook is best used when:
+
+- there are multiple reasons the component may rerender
+- there is an expensive calculation to perform, perhaps a bunch of array operations including sorts
+- prop changes often don't require the calculation to be redone
+
+## Anatomy
+
+```js
+const calculatedValue = useMemo(
+  () => {
+    // The calculations, ultimately returning the calculated value
+    return a + b;
+  },
+  [a, b] // dependencies
+);
+```
+
+The arrow function above will only be performed if `a` or `b` changes.
 
 # Mounting and unmounting
 
