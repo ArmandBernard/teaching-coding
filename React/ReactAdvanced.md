@@ -44,6 +44,8 @@ Dependencies are what will trigger. If left empty, useEffect will only trigger o
 
 # Mounting and unmounting
 
+The concepts of mounting and unmounting components is somewhat important when it comes to state management, component life-cycle and clean-up.
+
 Mounting occurs when a component is loaded into a page or parent component.
 
 Unmounting happens when changing pages or when conditionally un-rendered.
